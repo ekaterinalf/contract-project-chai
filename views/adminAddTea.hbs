@@ -1,0 +1,42 @@
+
+
+<div class = 'container form content col-md-4'>
+  <h2>Ну, здраствуй,  {{this.name}}</h2>
+  
+  <form action="/admin/newTea" method="post">
+
+    <div class="mb-3">
+      <label for="nameTea" class="form-label">Название сорта</label>
+      <input type="text" name="nameTea" class="form-control" placeholder="название сорта">
+    </div>
+
+    <div class="mb-3">
+      <label for="region" class="form-label">Регион</label>
+      <input type="text" name="region" class="form-control" placeholder="название региона">
+    </div>
+
+    <div class="mb-3">
+      <label for="description" class="form-label">Описание</label>
+      <input type="text" name="description" class="form-control" placeholder="описание">
+    </div>    
+
+    <div class="mb-3">
+      <label for="img" class="form-label">Ссылка на картинку</label>
+      <input type="text" name="img" class="form-control" placeholder="ссылка">
+    </div>
+
+    <div class="mb-3">
+      <label for="coordinatX" class="form-label">Широта</label>
+      <input type="text" name="coordinatX" class="form-control" placeholder="координата широты">
+    </div>
+
+     <div class="mb-3">
+      <label for="coordinatY" class="form-label">Долгота</label>
+      <input type="text" name="coordinatY" class="form-control" placeholder="координата долготы">
+    </div>
+
+    <div class = "submit">
+      <button type="submit" class="btn btn-primary">Добавить статью</button>
+    </div>
+  </form>
+</div>

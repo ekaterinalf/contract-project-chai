@@ -1,0 +1,25 @@
+
+
+
+<div class ='container col-md-4 form content formRegistration'>
+  <form action="/user/signUp" method="POST">
+    <div class="mb-3">
+      <label for="name" class="form-label">Ваше имя</label>
+      <input type="text" name="name" class="form-control" id="name" placeholder="Введите Ваше имя">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Ваш Email</label>
+      <input type="email" name="email" class="form-control" id="email" placeholder="Введите Ваш Email">
+    </div>
+     {{#if text}}
+      <p style="color: red;">{{text.text}}</p>
+    {{/if}}
+    <div class="mb-3">
+      <label for="Password" class="form-label">Пароль</label>
+      <input type="password" name="password" class="form-control" id="Password" placeholder="Придумайте пароль">
+    </div>
+    <div class = "submit">
+      <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+      </div>
+  </form>
+</div>

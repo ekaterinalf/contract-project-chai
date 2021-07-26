@@ -1,0 +1,31 @@
+{
+  "name": "contract-project-chai",
+  "version": "1.0.0",
+  "description": "## Звонок от заказчика",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node ./db/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuryBazhenov/contract-project-chai.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuryBazhenov/contract-project-chai/issues"
+  },
+  "homepage": "https://github.com/YuryBazhenov/contract-project-chai#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "faker": "^5.5.3",
+    "hbs": "^4.1.2",
+    "mongoose": "^5.12.14",
+    "session-file-store": "^1.5.0"
+  }
+}

@@ -1,0 +1,30 @@
+<div class = "container form content col-md-4 formLogin">
+  <form action="/user/login" method="POST">
+      {{#if textError}}
+        <div class="mb-3">
+          <label for="email" class="form-label">{{textError}}</label>
+          <label for="email" class="form-label" style="font-weight: 600">Попробуйте еще раз!!</label>
+          <input name="email" type="email" class="form-control" id="email" placeholder="Введите Ваш Email" style="background-color: rgb(199, 99, 99);">
+        </div>
+        <div class="mb-3">
+          <label for="Password" class="form-label">Пароль</label>
+          <input name="password" type="password" class="form-control" id="password" placeholder="Введите пароль" style="background-color: rgb(199, 99, 99);">
+        </div>
+        <div class = "submit">
+          <button type="submit" class="btn btn-primary">Войти</button>
+        </div>
+      {{else}}
+        <div class="mb-3">
+          <label for="email" class="form-label">Ваш Email</label>
+          <input name="email" type="email" class="form-control" id="email" placeholder="Введите Ваш Email">
+        </div>
+        <div class="mb-3">
+          <label for="Password" class="form-label">Пароль</label>
+          <input name="password" type="password" class="form-control" id="password" placeholder="Введите пароль">
+        </div>
+        <div class = "submit">
+          <button id="butIn" type="submit" class="btn btn-primary">Войти</button>
+        </div>
+      {{/if}}
+  </form>
+</div>

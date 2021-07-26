@@ -1,0 +1,220 @@
+.all {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*       Шапка сайта    */
+header {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 8px rgb(135, 185, 111);
+}
+
+.headerName {
+  font-family: 'Arsenal', sans-serif;
+  letter-spacing: 13px;
+}
+.nav-tabs{
+  border-bottom: 0px solid #dee2e6;
+}
+nav ul{
+  display:flex;
+  justify-content: center;
+
+  align-items: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 15px;
+  color: white;
+}
+a{
+  text-decoration: none;
+
+}
+
+/*       Footer   */
+
+footer {
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-top: solid 8px rgb(135, 185, 111);
+  display: flex;
+  justify-content: space-around;
+}
+.footer.left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*       Form   */
+.form div {
+  text-align: center;
+
+}
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+
+header, footer {
+  /* background-color: rgb(135, 185, 111); */
+  background-color: rgb(54, 105, 12);
+ 
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border: solid 2px rgb(135, 185, 111);
+}
+
+
+/*               teaArticle */
+
+
+.teablock {
+
+  text-align: center;
+}
+
+
+.comments{
+  margin-top: 15px;
+  display: flex;
+  align-items: center;  
+  flex-direction: column;
+}
+
+#first_map {
+  width: 800px;
+  height: 50vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-self: center;
+}
+
+map{
+  width: 800px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-self: center;
+}
+
+
+.tea_img:hover{
+  transform: scale(1.02);
+}
+
+.adminContent{
+  display: flex;
+  flex-direction: column;
+}
+
+.formRegistration{
+  height: 30rem;
+}
+
+.formLogin{
+  height: 30rem;
+}
+
+.adminMain{
+  height: 30rem;
+}
+
+.container .comments{
+  margin-top: 10px;
+  background-color: rgb(238, 232, 227);
+}
+
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  footer {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  header {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  #first_map {
+    width: 600px;
+    height: 40vh;
+
+  }
+  
+  map{
+    width: 600px;
+    height: 40vh;
+  }
+  .content {
+    padding: 5px;
+  }
+
+  nav ul li {
+    padding: 5px;
+  }
+  .headerName {
+    font-family: 'Arsenal', sans-serif;
+    letter-spacing: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  #first_map {
+    width: 500px;
+    height: 30vh;
+
+  }
+  
+  map{
+    width: 500px;
+    height: 30vh;
+  }
+  .content {
+    padding: 3px;
+  }
+
+  nav ul li {
+    padding: 2px;
+  }
+  .headerName {
+    font-family: 'Arsenal', sans-serif;
+    letter-spacing: 2px;
+  }
+  footer {
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  header {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+  }
+}
